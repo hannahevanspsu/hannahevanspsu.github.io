@@ -1,0 +1,223 @@
+html, body {
+    width: 1500px;
+    min-width: 1500px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0C1519;
+    color: #ECCAB4;
+}
+
+/* Main Page Container */
+.page {
+    width: 85%;
+    margin: auto;
+    background-color: #162127;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Header with Background Image */
+header {
+    background-image: url("header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+
+    color: #CF9D7B;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+    position: relative;
+}
+
+/* Dark Overlay */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(12, 21, 25, 0.55);
+}
+
+/* Keep text above overlay */
+header h1,
+header .tagline {
+    position: relative;
+    z-index: 1;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #F1E2D7;
+    text-shadow: 0 0 10px rgba(129, 107, 92, 0.6);
+}
+
+h2 {
+    color: #C9906A;
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+}
+
+h3 {
+    color: #D3B593;
+    font-family: 'Playfair Display', serif;
+}
+p{
+    color: #F3E7DE;
+    font-size: 20px;
+}
+
+span {
+    color: #D3B593;
+    font-weight: bold;
+}
+
+/* Tagline */
+.tagline {
+    color: #d4b29b;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+    background-color: #6D4C21;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #EFDDD0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 40px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #40382A;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+/* Main Content */
+main {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Floating Featured Product Box */
+.float-box {
+    float: right;
+    width: 250px;
+    margin: 0 0 20px 25px;
+    padding: 15px;
+    background-color: #40382A;
+    color: #CF9D7B;
+    border: 3px solid #6D4C21;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.float-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Scent Cards */
+.card {
+    background-color: #40382A;
+    color: #CF9D7B;
+    border-left: 6px solid #6D4C21;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: #2b2d29;
+    color: #ffffff;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.candle-image {
+    border: 8px inset #6D4C21;
+}
+
+.scent-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin: 30px 0;
+}
+
+.scent-description {
+    font-size: 16px;    
+    margin: 5px 0;
+}
+
+.scent-column {
+    width: 280px;
+}
+
+.image-container img {
+    width: 550px;
+    display: block;
+}
+
+/* Contact Section */
+.contact-box {
+    background-color: #40382A;
+    color: #CF9D7B;
+    padding: 20px;
+    border-radius: 12px;
+    border: 3px solid #6D4C21;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #724B39;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #CF9D7B;
+    color: #0C1519;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    background-color: #0C1519;
+    color: #CF9D7B;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
