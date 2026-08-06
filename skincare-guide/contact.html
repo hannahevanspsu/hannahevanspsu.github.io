@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glow Guide | Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">Glow Guide</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skin-types.html">Skin Types</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ingredients.html">Ingredients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="routines.html">Routines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+<section class="page-header">
+    <div class="container text-center">
+        <h1>Contact The Glow Guide</h1>
+        <p class="lead">We'd love to hear from you! Share your skincare questions or suggestions using the form below.</p>
+    </div>
+</section>
+
+<section class="container my-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="card shadow p-4">
+
+                <form onsubmit="submitForm(event)">
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">What is your skin type?</label>
+                        <select class="form-select">
+                            <option>Normal</option>
+                            <option>Dry</option>
+                            <option>Oily</option>
+                            <option>Combination</option>
+                            <option>Sensitive</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Favorite Skincare Ingredient</label>
+                        <input
+                            type="text"
+                            class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea
+                            class="form-control"
+                            rows="5"
+                            required></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button
+                            class="btn btn-success btn-lg"
+                            type="submit">
+                            Submit
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+    <div class="accordion" id="faq">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button
+                    class="accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#one">
+                    How often should I wash my face?
+                </button>
+            </h2>
+            <div id="one"
+                class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    Most people benefit from washing their face twice
+                    daily. Usually once in the morning and once before bed.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#two">
+                    Do I need sunscreen every day?
+                </button>
+            </h2>
+            <div id="two"
+                class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    Yes! Daily sunscreen helps protect your skin from UV
+                    damage, even on cloudy days. 
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#three">
+                    How long before skincare products work?
+                </button>
+            </h2>
+            <div id="three"
+                class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    Many skincare products require 4 to 8 weeks of
+                    consistent use before noticeable improvements occur.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container my-5">
+
+    <div class="row text-center">
+
+        <div class="col-md-4">
+            <h4>Email</h4>
+            <p>contactus@glowguide.com</p>
+        </div>
+
+        <div class="col-md-4">
+            <h4>Follow Us</h4>
+            <p>Instagram | TikTok | Facebook</p>
+        </div>
+
+        <div class="col-md-4">
+            <h4>Hours</h4>
+            <p>Monday - Friday<br>9:00 AM - 5:00 PM</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>The Glow Guide | Created for IST 250</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

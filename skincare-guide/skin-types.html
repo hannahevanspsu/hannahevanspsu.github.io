@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glow Guide | Skin Types</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">The Glow Guide</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="skin-types.html">Skin Types</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ingredients.html">Ingredients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="routines.html">Routines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<section class="page-header">
+    <div class="container text-center">
+        <h1>Understanding Skin Type</h1>
+        <p class="lead">Everyone's skin is different, so learning your skin type is the best first step to choosing the products that work best for you.</p>
+    </div>
+</section>
+
+<section class="container my-5">
+
+    <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow">
+                <img src="images/dry.jpg" class="card-img-top" alt="Dry Skin">
+                <div class="card-body">
+                    <h3>Dry Skin</h3>
+                    <p>Dry skin usually feels tight, rough, or flaky because it lacks moisture. Rich moisturizers and hydrating ingredients are recommended.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow">
+                <img src="images/oily.jpg" class="card-img-top" alt="Oily Skin">
+                <div class="card-body">
+                    <h3>Oily Skin</h3>
+                    <p>Oily skin produces excess sebum and can appear shiny. Lightweight moisturizers and gentle cleansers are ususally the most helpful.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow">
+                <img src="images/combination.jpg" class="card-img-top" alt="Combination Skin">
+                <div class="card-body">
+                    <h3>Combination Skin</h3>
+                    <p>Combination skin has both oily and dry areas. The T-zone is usually oily while the cheeks are dry.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6">
+            <div class="card h-100 shadow">
+                <img src="images/normal.jpg" class="card-img-top" alt="Normal Skin">
+                <div class="card-body">
+                    <h3>Normal Skin</h3>
+                    <p>Normal skin is generally balanced with few blemishes, not a lot of sensitivity, and medium hydration.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6">
+            <div class="card h-100 shadow">
+                <img src="images/sensitive.jpg" class="card-img-top" alt="Sensitive Skin">
+                <div class="card-body">
+                    <h3>Sensitive Skin</h3>
+                    <p>Sensitive skin is easily irritated by products or the environment. Fragrance free products are best.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">Skin Type Comparison</h2>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped text-center">
+            <thead class="table-success">
+                <tr>
+                    <th>Skin Type</th>
+                    <th>Main Characteristics</th>
+                    <th>Recommended Products</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Dry</td>
+                    <td>Flaky, tight, rough</td>
+                    <td>Cream cleanser, rich moisturizer</td>
+                </tr>
+
+                <tr>
+                    <td>Oily</td>
+                    <td>Shiny, large pores</td>
+                    <td>Gel cleanser, lightweight moisturizer</td>
+                </tr>
+
+                <tr>
+                    <td>Combination</td>
+                    <td>Dry cheeks, oily T-zone</td>
+                    <td>Balanced skincare routine</td>
+                </tr>
+
+                <tr>
+                    <td>Normal</td>
+                    <td>Balanced and healthy</td>
+                    <td>Gentle cleanser and moisturizer</td>
+                </tr>
+
+                <tr>
+                    <td>Sensitive</td>
+                    <td>Redness, irritation</td>
+                    <td>Fragrance free products</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</section>
+
+<section class="container text-center my-5">
+
+    <h2>Find Your Skin Type</h2>
+    <p>Click the button below for a suggestion based on common skin characteristics.</p>
+
+    <button class="btn btn-success btn-lg" onclick="skinQuiz()">Find My Skin Type</button>
+
+    <div id="quizResult" class="mt-4 tip-box">
+        Your result will appear here.
+    </div>
+
+</section>
+
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">General Skincare Tips</h2>
+
+    <ul class="list-group">
+
+        <li class="list-group-item">
+            Wash your face with a gentle cleanser twice daily.
+        </li>
+        <li class="list-group-item">
+            Wear sunscreen every day, even on the cloudy ones.
+        </li>
+        <li class="list-group-item">
+            Drink lots of water to support cellular turnover and skin health.
+        </li>
+        <li class="list-group-item">
+            Avoid using harsh products too much.
+        </li>
+        <li class="list-group-item">
+            Moisturize regularly to maintain your skin barrier.
+        </li>
+
+    </ul>
+
+</section>
+
+<footer>
+    <p>The Glow Guide | Created for IST 250</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

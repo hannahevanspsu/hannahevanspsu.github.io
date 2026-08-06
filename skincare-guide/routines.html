@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glow Guide | Skincare Routines</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">The Glow Guide</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skin-types.html">Skin Types</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ingredients.html">Ingredients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="routines.html">Routines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+<section class="page-header">
+    <div class="container text-center">
+        <h1>Daily Skincare Routine</h1>
+        <p class="lead">Following a consistent routine can keep your skin healthy, hydrated, and protected.</p>
+    </div>
+</section>
+
+<section class="container my-5">
+
+    <div class="row g-4">
+
+        <div class="col-lg-6">
+            <div class="card shadow h-100">
+                <img src="images/morning.jpg" class="card-img-top" alt="Morning Routine">
+                <div class="card-body">
+                    <h2>Morning Routine</h2>
+                    <ol>
+                        <li>Cleanser</li>
+                        <li>Vitamin C Serum</li>
+                        <li>Moisturizer</li>
+                        <li>Sunscreen (least SPF 30+)</li>
+                    </ol>
+                    <p>A morning routine focuses on cleansing, hydration, and protecting the skin from damage throughout the day.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card shadow h-100">
+                <img src="images/night.jpg" class="card-img-top" alt="Night Routine">
+                <div class="card-body">
+                    <h2>Evening Routine</h2>
+                    <ol>
+                        <li>Cleanser</li>
+                        <li>Treatment (Retinol or Salicylic Acid)</li>
+                        <li>Moisturizer</li>
+                    </ol>
+                    <p>Your evening routine supports skin recovery and cellular growth. Active ingredients are often best used at night.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container my-5 text-center">
+
+    <h2>Daily Routine Checklist</h2>
+
+    <p>Check off each step as you complete your skincare routine today.</p>
+
+    <div class="routine-box">
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" onclick="updateRoutine()">
+            <label class="form-check-label">Washed my face</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" onclick="updateRoutine()">
+            <label class="form-check-label">Applied serum</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" onclick="updateRoutine()">
+            <label class="form-check-label">Moisturized</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" onclick="updateRoutine()">
+            <label class="form-check-label">Applied sunscreen</label>
+        </div>
+        <h4 class="mt-4" id="routineStatus">Complete all four steps!!</h4>
+
+    </div>
+
+</section>
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">
+        Healthy Skincare Habits
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card shadow text-center h-100">
+                <div class="card-body">
+                    <h4>Stay Hydrated</h4>
+                    <p>Drinking enough water supports your overall health and helps your skin look its best.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow text-center h-100">
+                <div class="card-body">
+                    <h4>Sleep Well</h4>
+                    <p>Aim for 7 to 9 hours of sleep to give your skin time to repair itself overnight.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow text-center h-100">
+                <div class="card-body">
+                    <h4>Eat Well</h4>
+                    <p>A balanced diet with lots of fruits, vegetables, and healthy fats support healthy skin.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container my-5 text-center">
+
+    <h2>Create a Simple Routine</h2>
+
+    <p>Choose your skin concern to receive a recommended focus.</p>
+
+    <select id="concern" class="form-select w-50 mx-auto">
+        <option value="">Select One</option>
+        <option>Dryness</option>
+        <option>Acne</option>
+        <option>Dark Spots</option>
+        <option>Fine Lines</option>
+    </select>
+
+    <button class="btn btn-success mt-3"
+        onclick="recommendRoutine()">
+        Get A Recommendation
+    </button>
+
+    <div id="recommendation" class="tip-box mt-4">
+        Your personalized recommendation will appear here.
+    </div>
+
+</section>
+
+<footer>
+
+    <p>The Glow Guide | Created for IST 250</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
