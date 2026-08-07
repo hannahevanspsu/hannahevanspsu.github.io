@@ -20,6 +20,9 @@ h4,
     font-family:'Playfair Display', serif;
 
 }
+.custom-navbar{
+    background-color:#7FAF8F !important;
+}
 
 .navbar{
     box-shadow:0 3px 8px rgba(0,0,0,.15);
@@ -73,7 +76,7 @@ h4,
 }
 
 .page-header{
-    background:#d9f2dd;
+    background:#E8F3EA;
     padding:60px 20px;
     text-align:center;
 }
@@ -134,8 +137,8 @@ thead{
 }
 
 .tip-box{
-    background:#edf8ee;
-    border-left:6px solid #4caf50;
+    background:#EEF7F0;
+    border-left:6px solid #91B99B;
     padding:20px;
     margin-top:20px;
     border-radius:10px;
@@ -158,13 +161,15 @@ thead{
 }
 
 .btn-success{
-    background:#4caf50;
+    background:#91B99B;
     border:none;
+    color:#ffffff;
     transition:.3s;
 }
 
 .btn-success:hover{
-    background:#388e3c;
+    background:#6F9F7D;
+    color:#ffffff;
     transform:scale(1.05);
 }
 
