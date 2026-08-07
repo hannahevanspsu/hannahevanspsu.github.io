@@ -7,7 +7,7 @@ function showTip(){
         "Drink plenty of water to help keep your skin hydrated.",
         "Avoid touching your face throughout the day.",
         "Introduce new skincare products one at a time.",
-        "Be patient—most skincare products take several weeks to show results."
+        "Be patient, as most skincare products take several weeks to show results."
     ];
 
     const randomTip = tips[Math.floor(Math.random() * tips.length)];
@@ -33,11 +33,11 @@ function skinQuiz(){
 function showIngredient(){
 
     const ingredients = [
-        "💧 Hyaluronic Acid: Helps attract moisture and keeps skin hydrated.",
-        "✨ Vitamin C: Brightens skin and helps reduce dark spots.",
-        "🌿 Niacinamide: Reduces redness and improves skin texture.",
-        "🌙 Retinol: Encourages skin renewal and reduces fine lines.",
-        "🫧 Salicylic Acid: Helps unclog pores and reduce acne."
+        "Hyaluronic Acid: Helps attract moisture and keeps skin hydrated.",
+        "Vitamin C: Brightens skin and helps reduce dark spots.",
+        "Niacinamide: Reduces redness and improves skin texture.",
+        "Retinol: Encourages skin renewal and reduces fine lines.",
+        "Salicylic Acid: Helps unclog pores and reduce acne."
     ];
 
     const randomIngredient =
